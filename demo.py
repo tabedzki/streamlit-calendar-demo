@@ -247,6 +247,8 @@ state = calendar(
         font-size: 2rem;
     }
     """,
+    # The key is required to prevent the calendar from refreshing after the first interaction while also storing
+    # the events within the `st.session_state["events"]`.
     key=mode,
 )
 
